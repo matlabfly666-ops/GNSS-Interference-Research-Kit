@@ -46,3 +46,30 @@ venv\Scripts\activate        # Windows
 
 # Install the package in editable mode
 pip install -e .
+
+## ▶️ Quick Start
+
+### Run a Python Script
+```bash
+python examples/demo.py
+
+### Execute a Jupyter Notebook (without opening browser)
+jupyter nbconvert --to notebook --execute examples/01_single_tone_interference.ipynb
+
+## Project Structure
+GNSS-Interference-Research-Kit/
+├── girk/                     # Core package
+│   ├── __init__.py
+│   ├── interference/         # Interference generators
+│   └── mitigation/           # Mitigation algorithms
+├── examples/                 # Example scripts and notebooks
+│   ├── demo.py               # Minimal working example
+│   ├── 01_single_tone_interference.ipynb
+│   ├── 02_narrowband_interference.ipynb
+│   ├── 11_fdpb_mitigation_demo.ipynb
+│   └── 12_iir_notch_mitigation_demo.ipynb
+├── requirements.txt          # Exact dependency versions
+├── setup.py                  # Package metadata and dependencies
+├── .gitignore                # Files excluded from version control
+├── LICENSE                   # MIT License
+└── README.md                 # This file
